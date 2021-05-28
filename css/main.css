@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
 :root {
-  --primaryColor: #d4c0ee;
+  --primaryColor: #945eeb;
   --mainWhite: #fff;
   --mainBlack: #222;
   --mainGrey: #e8ecee;
@@ -42,7 +42,7 @@ body {
 .navbar-icon {
     font-size: 1.5rem;
 }
-img {
+.logo {
     width: 250px;
 }
 .cart-btn {
@@ -129,6 +129,7 @@ img {
     top: 70%;
     right: 0;
     background: var(--primaryColor);
+    color: var(--mainBlack);
     border: none;
     text-transform: uppercase;
     padding: 0.5rem 0.75rem;
@@ -175,4 +176,144 @@ img {
      font-size: 1,2rem;
      text-align: center;
   }
+  .card {
+    border-style: none;
+  }
+  .card h2 h4 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    letter-spacing: var(--mainSpacing);
+    text-align: center;
+  }
   /* ---------------End of Products ---------------- */
+
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 35px auto;
+    max-width: 900px;
+    /*display: inline;*/
+    /*justify-content: center;*/
+}
+
+table td,
+table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+table tr:nth-child(even){
+    background-color: #e9ecef8f;
+
+}
+
+table .deleteItem {
+    border: 0 solid;
+    background-color: #e99d9d;
+    -webkit-box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+            box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  table .deleteItem:hover {
+    -webkit-box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+            box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    text-shadow: 1px 1px 2px #427388;
+  }
+
+tr p {
+    display: inline;
+}
+
+.divImage img{
+    margin-right: 20px;
+    display: inline;
+}
+.divImage p {
+    display: inline;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.quantity{
+    width: 50px;
+}
+
+#product-total{ 
+    display: flex;
+    justify-content: center;
+    background-color: #e9ecef8f;
+    width: 30%;
+    margin: auto;
+    border-radius: 40px;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+
+.p {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #00c02b !important;
+    border-color: #009d23 !important;
+    color: #ffffff;
+    margin-top: 10px;
+    max-width: 400px;
+    padding: 6px;
+    background: #cccccc;
+    text-align: center;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, top 0.2s, visibility 0.2s;
+}
+
+.p-visible {
+    top: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.total p {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.total-price {
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.required {
+  color: red;
+}
+/* --------------- Confirmation ---------------- */
+main header {
+  border: solid 1px gainsboro;
+  width: 100%;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-top: none;
+}
+
+main header h1 {
+  font-size: 25px;
+}
+
+main div {
+  padding: 30px;
+  font-size: 20px;
+}
+
+main div button {
+  margin: auto;
+}
